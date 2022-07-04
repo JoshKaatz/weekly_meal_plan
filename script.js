@@ -1,19 +1,31 @@
-const recipes = [
-    ['Chicken Barrbery', 1],
-    ['Chicken Rice Pees', 1],
-    ['BBQ Chicken Salad', 1],
-    ['Chicken Soup', 1],
-    ['Pasta with Meat Sauce', 2],
-    ['Pot Roast', 2],
-    ['White Bean Prosciutto Soup', 2],
-    ['Beef and Broccoli', 2],
-    ['Chicken and Broccoli', 1],
-    ['Matzo Ball Soup', 1],
-    ['Risotto Shrimp and Asparagus', 2],
-    ['Eggplant Lasagna', 3],
-    ['Chicken Makhani', 1],
-    ['Vegetable and Chickpea Stew', 3],
-    ['Cheesy Cauliflower Bake', 3],
-    ['Coconut Lentil Curry', 3],
-    ['Moroccan Lentil and Chickpea Soup', 3],
-    ['Cheesy Potato Soup', 3]]
+// recipes coded for later requirements, 1=chicken, 2=other protein, 3=veggie only
+const recipesChicken = [
+    'Chicken Barrbery',
+    'Chicken Rice Pees',
+    'BBQ Chicken Salad',
+    'Chicken Leek Soup',
+    'Chicken and Broccoli',
+    'Matzo Ball Soup',
+    'Chicken Makhani',
+]
+
+const recipesOther = [
+    'Pasta with Meat Sauce',
+    'Pot Roast',
+    'White Bean Prosciutto Soup',
+    'Beef and Broccoli',
+    'Risotto Shrimp and Asparagus',
+]
+
+const recipesVeggies = [
+    'Eggplant Lasagna',
+    'Vegetable and Chickpea Stew',
+    'Cheesy Cauliflower Bake',
+    'Coconut Lentil Curry',
+    'Moroccan Lentil and Chickpea Soup',
+    'Cheesy Potato Soup'
+]
+
+// array to hold weeks meal plans
+const mealplan = [];
+
