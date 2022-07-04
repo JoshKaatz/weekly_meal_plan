@@ -52,8 +52,11 @@ const randomMeals = () => {
 
 
 // function to randomize meal array
-const planRandomizer = () => {
-
+function shuffle() {
+    for (let i = meals.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [meals[i], meals[j]] = [meals[j], meals[i]]
+    }
 }
 
 // function to output meal plan
@@ -62,4 +65,5 @@ const mealPlan = () => {
 }
 
 randomMeals()
+shuffle()
 console.log(meals)
