@@ -29,10 +29,27 @@ const recipesVeggies = [
 // array to hold weeks meals
 const meals = [];
 
-// function to choose meals, 2 chicken, 1 other protein, 1 veggies
-const mealRandomizer = () => {
+// function to choose random meals
+function getRandomItem(arr) {
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        const item = arr[randomIndex];
+        return item;
+    };
 
-}
+const randomMeals = () => {
+    meals.push(getRandomItem(recipesChicken))
+    meals.push(getRandomItem(recipesOther))
+    meals.push(getRandomItem(recipesVeggies))
+    const chicken2 = () => {
+        meals.push(getRandomItem(recipesChicken))
+        if (meals[0] === meals[3]) {
+            meals.splice(3,1);
+            chicken2()
+        };
+    }
+    chicken2()
+    }
+
 
 // function to randomize meal array
 const planRandomizer = () => {
@@ -43,3 +60,6 @@ const planRandomizer = () => {
 const mealPlan = () => {
 
 }
+
+randomMeals()
+console.log(meals)
