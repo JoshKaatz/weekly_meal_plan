@@ -61,9 +61,9 @@ function shuffle() {
 
 // function to output meal plan
 const mealPlan = () => {
-
+    randomMeals()
+    shuffle()
+    console.log('This weeks meal plan is ... Monday: ' + meals[0] + ' | Tuesday: ' + meals[1] + ' | Wednesday: ' + meals[2] + ' | Thursday: ' + meals[3] + ' | Friday: eat out at Thai')
 }
 
-randomMeals()
-shuffle()
-console.log(meals)
+mealPlan()
