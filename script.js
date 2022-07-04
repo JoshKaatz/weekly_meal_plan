@@ -1,7 +1,7 @@
 // recipes
 const recipesChicken = [
     'Chicken Barrbery',
-    'Chicken Rice Pees',
+    'Chicken Rice Peas',
     'BBQ Chicken Salad',
     'Chicken Leek Soup',
     'Chicken and Broccoli',
