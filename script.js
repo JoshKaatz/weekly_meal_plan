@@ -1,4 +1,4 @@
-// recipes coded for later requirements, 1=chicken, 2=other protein, 3=veggie only
+// recipes
 const recipesChicken = [
     'Chicken Barrbery',
     'Chicken Rice Pees',
@@ -26,6 +26,20 @@ const recipesVeggies = [
     'Cheesy Potato Soup'
 ]
 
-// array to hold weeks meal plans
-const mealplan = [];
+// array to hold weeks meals
+const meals = [];
 
+// function to choose meals, 2 chicken, 1 other protein, 1 veggies
+const mealRandomizer = () => {
+
+}
+
+// function to randomize meal array
+const planRandomizer = () => {
+
+}
+
+// function to output meal plan
+const mealPlan = () => {
+
+}
